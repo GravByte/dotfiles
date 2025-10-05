@@ -1,0 +1,27 @@
+# Ignore everything by default under ~/.config
+.config/**
+
+# Whitelist safe configs
+!.config/breezerc
+!.config/dolphinrc
+!.config/kdeglobals
+!.config/kglobalshortcutsrc
+!.config/kwinrc
+!.config/gtk-3.0/settings.ini
+!.config/gtk-4.0/settings.ini
+!.config/gtkrc-2.0
+!.config/mimeapps.list
+!.config/fontconfig/**
+!.config/yay/**
+
+# Skip caches and secrets
+.cache/
+.config/Bitwarden/
+.config/BraveSoftware/
+.config/discord/
+.config/dconf/
+.config/obsidian/
+.config/spotify/
+.config/pcloud/
+.config/kdeconnect/
+.config/configstore/
