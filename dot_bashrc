@@ -14,6 +14,11 @@ if [ -S "$HOME/.bitwarden-ssh-agent.sock" ]; then
   export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 fi
 
+alias ls='exa --icons'
+alias cat='bat'
+eval "$(zoxide init bash)"
+eval "$(thefuck --alias)"
+
 # Highlight when in SSH
 if [ -n "$SSH_CONNECTION" ]; then
   PS1="\[\033[1;31m\](ssh)\[\033[0m\] $PS1"
