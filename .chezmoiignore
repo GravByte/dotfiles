@@ -1,6 +1,3 @@
-# Ignore everything by default under ~/.config
-.config/**
-
 # Whitelist safe configs
 !.config/breezerc
 !.config/dolphinrc
